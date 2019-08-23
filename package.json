@@ -1,25 +1,31 @@
 {
-  "name": "webp-checker",
-  "version": "1.1.3",
-  "description": "Easy way to understand is the browser has webP support or not",
+  "name": "react-picture",
+  "version": "1.0.0",
+  "description": "Picture generator for React-based app. Intelligent work with webP format!",
   "main": "index.js",
   "author": "Sviatoslav Kuzhelev Front-End Dev <sviat770@gmail.com> <https://sviathuzh.top>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BiosBoy/webp-checker.git"
+    "url": "git+https://github.com/BiosBoy/react-picture.git"
   },
   "keywords": [
     "js",
     "ts",
+    "picture",
+    "image",
+    "image set",
+    "image-set",
+    "retina images",
+    "retina",
     "webp",
-    "webp-checker",
-    "webp checker"
+    "react-picture",
+    "react picture"
   ],
   "bugs": {
-    "url": "https://github.com/BiosBoy/webp-checker/issues"
+    "url": "https://github.com/BiosBoy/react-picture/issues"
   },
-  "homepage": "https://github.com/BiosBoy/webp-checker",
+  "homepage": "https://github.com/BiosBoy/react-picture",
   "devDependencies": {},
   "dependencies": {}
 }

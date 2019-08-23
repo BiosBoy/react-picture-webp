@@ -1,18 +1,18 @@
-# WebP Checker
+# React-Picture
 
- [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=See&url=https://github.com/BiosBoy/webp-checker&via=svyat770&hashtags=js,jsx,webp,checker,webp-checker,webp,html,css)
+ [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=See&url=https://github.com/BiosBoy/react-picture&via=svyat770&hashtags=js,jsx,webp,react-picture,picture,images,html,css)
 
 ### The easist way to check webp support in any browser!
 
-[![npm](https://badgen.net/npm/v/webp-checker)](https://www.npmjs.com/package/webp-checker) [![Price](https://img.shields.io/badge/price-FREE-purple.svg)](https://github.com/BiosBoy/webp-checker/blob/master/LICENSE) [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](https://github.com/BiosBoy/webp-checker/blob/master/LICENSE) [![GitHub package version](https://img.shields.io/badge/version-1.1.3-green.svg)](https://github.com/BiosBoy/webp-checker) ![](https://img.badgesize.io/biosboy/webp-checker/master/index.js.svg)
+[![npm](https://badgen.net/npm/v/react-picture)](https://www.npmjs.com/package/react-picture) [![Price](https://img.shields.io/badge/price-FREE-purple.svg)](https://github.com/BiosBoy/react-picture/blob/master/LICENSE) [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](https://github.com/BiosBoy/react-picture/blob/master/LICENSE) [![GitHub package version](https://img.shields.io/badge/version-1.1.3-green.svg)](https://github.com/BiosBoy/react-picture) ![](https://img.badgesize.io/biosboy/react-picture/master/index.js.svg)
 
   
 
-![logo_image](https://raw.githubusercontent.com/BiosBoy/webp-checker/master/web-checker_logo.jpg)
+![logo_image](https://raw.githubusercontent.com/BiosBoy/react-picture/master/web-checker_logo.jpg)
 
 **How to use:**
   - Prepare:
-   Install `webp-checker` as a regular `node_modules` package via:
+   Install `react-picture` as a regular `node_modules` package via:
    ```
      npm i web-checker
    ```
@@ -20,7 +20,7 @@
    ```
      yarn add web-checker
    ```
-**Important!** - you need to run `webp-checker` as soon as possible inside the very first component/module that has an interaction with the whole DOM. For example in `create-react-app` you probably should run the below script example in the `componentDidMount()` method of the root App.js component (or if you're using `Redux` state managment inside its `initialState.js`).
+**Important!** - you need to run `react-picture` as soon as possible inside the very first component/module that has an interaction with the whole DOM. For example in `create-react-app` you probably should run the below script example in the `componentDidMount()` method of the root App.js component (or if you're using `Redux` state managment inside its `initialState.js`).
 
 **Quick Start:**
 
@@ -30,7 +30,7 @@
   -- Example for React usage:
   ```
     // ...some logic
-    import webpChecker from 'webp-checker' // import it;
+    import webpChecker from 'react-picture' // import it;
 
     class App extends React.Component {
      // ...some logic
@@ -47,7 +47,7 @@
   
   -- Example basic:
   ```
-     import webpChecker from 'webp-checker' // import it;
+     import webpChecker from 'react-picture' // import it;
 
      webpChecker(); // run checker
     
@@ -57,7 +57,7 @@
 **Advanced:**
   - In case when you need to set up a better custom config you can throw props as:
 ```
-  import webpChecker from 'webp-checker' // import it;
+  import webpChecker from 'react-picture' // import it;
 
   const config = {
     imgURL: 'imgSrc', // your_webp_image_src, by default used google static image
