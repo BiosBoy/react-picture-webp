@@ -6,7 +6,7 @@
 
 [![npm](https://badgen.net/npm/v/react-picture)](https://www.npmjs.com/package/react-picture) [![Price](https://img.shields.io/badge/price-FREE-purple.svg)](https://github.com/BiosBoy/react-picture/blob/master/LICENSE) [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](https://github.com/BiosBoy/react-picture/blob/master/LICENSE) [![GitHub package version](https://img.shields.io/badge/version-1.1.3-green.svg)](https://github.com/BiosBoy/react-picture) ![](https://img.badgesize.io/biosboy/react-picture/master/index.js.svg)
 
-![logo_image](https://raw.githubusercontent.com/BiosBoy/react-picture/master/react-picture.jpg)
+![logo_image](https://raw.githubusercontent.com/BiosBoy/react-picture/master/react-picture_logo.jpg)
 
 **How to use:**
   - Prepare:
