@@ -155,7 +155,7 @@ var Picture =
         classes = _this$props3.classes,
         path = _this$props3.path,
         name = _this$props3.name,
-        type = _this$props3.type;
+        type = _this$props3.type,
         pixelDensity = _this$props3.pixelDensity;
 
       if (!path || !pixelDensity || !name || !type) {
