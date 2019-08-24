@@ -156,9 +156,9 @@ var Picture =
         path = _this$props3.path,
         name = _this$props3.name,
         type = _this$props3.type;
-        dixelDensity = _this$props3.dixelDensity;
+        pixelDensity = _this$props3.pixelDensity;
 
-      if (!path || !dixelDensity || !name || !type) {
+      if (!path || !pixelDensity || !name || !type) {
         console.error(
           "REACT-PICTURE ERROR - YOUR MUST PROVIDE THE PIXELDENSITY, NAME, PATH AND TYPE OF THE IMAGES FIRST!"
         );

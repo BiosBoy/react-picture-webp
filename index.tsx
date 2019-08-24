@@ -108,9 +108,9 @@ class Picture extends React.PureComponent<IProps, any> {
   }
 
   render() {
-    const { classes, dixelDensity, path, name, type } = this.props
+    const { classes, pixelDensity, path, name, type } = this.props
 
-    if (!path || !dixelDensity || !name || !type) {
+    if (!path || !pixelDensity || !name || !type) {
       console.error('REACT-PICTURE ERROR - YOUR MUST PROVIDE THE PIXELDENSITY, NAME, PATH AND TYPE OF THE IMAGES FIRST!')
       return null
     }
