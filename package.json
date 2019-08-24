@@ -2,7 +2,7 @@
   "name": "react-picture",
   "version": "1.0.0",
   "description": "Picture generator for React-based app. Intelligent work with webP format!",
-  "main": "index.js",
+  "main": "dist/index.js",
   "author": "Sviatoslav Kuzhelev Front-End Dev <sviat770@gmail.com> <https://sviathuzh.top>",
   "license": "MIT",
   "repository": {
@@ -27,5 +27,9 @@
   },
   "homepage": "https://github.com/BiosBoy/react-picture",
   "devDependencies": {},
-  "dependencies": {}
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
+  }
 }
