@@ -1,5 +1,8 @@
-# react-picture
+# react-picture-webp
 
+
+## 1.1.2
+ * Fixed npm name collision.
 
 ## 1.1.1
  * Readme.md update.

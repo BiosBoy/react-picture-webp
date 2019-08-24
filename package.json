@@ -1,5 +1,5 @@
 {
-  "name": "react-picture",
+  "name": "react-picture-webp-webp",
   "version": "1.0.0",
   "description": "Picture generator for React-based app. Intelligent work with webP format!",
   "main": "dist/index.js",
@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BiosBoy/react-picture.git"
+    "url": "git+https://github.com/BiosBoy/react-picture-webp.git"
   },
   "keywords": [
     "js",
@@ -19,13 +19,13 @@
     "retina images",
     "retina",
     "webp",
-    "react-picture",
+    "react-picture-webp",
     "react picture"
   ],
   "bugs": {
-    "url": "https://github.com/BiosBoy/react-picture/issues"
+    "url": "https://github.com/BiosBoy/react-picture-webp/issues"
   },
-  "homepage": "https://github.com/BiosBoy/react-picture",
+  "homepage": "https://github.com/BiosBoy/react-picture-webp",
   "devDependencies": {},
   "dependencies": {},
   "peerDependencies": {
