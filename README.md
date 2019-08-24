@@ -1,4 +1,4 @@
-# react-picture-webp
+# React-Picture-webP
 
  [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=See&url=https://github.com/BiosBoyreact-picture-webp&via=svyat770&hashtags=js,jsx,webp,react-picture-webp,picture,images,html,css)
 
