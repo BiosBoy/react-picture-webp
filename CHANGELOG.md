@@ -1,6 +1,10 @@
 # react-picture
 
 
+## 1.1.1
+ * Readme.md update.
+ * Minor fixes.
+
 ## 1.0.1
  * Public release.
 

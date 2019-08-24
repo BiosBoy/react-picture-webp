@@ -154,7 +154,7 @@ Picture.defaultProps = {
   type: "",
   path: "",
   name: "",
-  pixelDensity: _constants.PIXELS_DENSITY_COUNT,
+  pixelDensity: _constants.DESKTOP_PIXEL_DESTINY,
   extraResolutions: {
     desktop: "min-width: 1001px",
     tablet: "max-width: 1000px",

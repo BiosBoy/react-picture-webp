@@ -2,11 +2,9 @@
 
  [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=See&url=https://github.com/BiosBoy/react-picture&via=svyat770&hashtags=js,jsx,webp,react-picture,picture,images,html,css)
 
-### The easist way to check webp support in any browser!
+### Serve any images' retina set with easy with `react-picture` (Intelligent `webP` support included)!
 
 [![npm](https://badgen.net/npm/v/react-picture)](https://www.npmjs.com/package/react-picture) [![Price](https://img.shields.io/badge/price-FREE-purple.svg)](https://github.com/BiosBoy/react-picture/blob/master/LICENSE) [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](https://github.com/BiosBoy/react-picture/blob/master/LICENSE) [![GitHub package version](https://img.shields.io/badge/version-1.1.3-green.svg)](https://github.com/BiosBoy/react-picture) ![](https://img.badgesize.io/biosboy/react-picture/master/index.js.svg)
-
-  
 
 ![logo_image](https://raw.githubusercontent.com/BiosBoy/react-picture/master/web-checker_logo.jpg)
 
@@ -14,57 +12,85 @@
   - Prepare:
    Install `react-picture` as a regular `node_modules` package via:
    ```
-     npm i web-checker
+     npm i react-picture
    ```
    or yarn:
    ```
-     yarn add web-checker
+     yarn add react-picture
    ```
-**Important!** - you need to run `react-picture` as soon as possible inside the very first component/module that has an interaction with the whole DOM. For example in `create-react-app` you probably should run the below script example in the `componentDidMount()` method of the root App.js component (or if you're using `Redux` state managment inside its `initialState.js`).
+**WebP Important Notice!** - to serve webP images via `react-picture` you need to install `webp-checker` package via `npm i web-checker` or `yarn add webp-checker`. And then run it as soon as possible inside the very first component/module that has an interaction with the whole DOM. For example in `create-react-app` you probably should run the below script example in the `componentDidMount()` method of the root App.js. (more details here: https://github.com/BiosBoy/webp-checker/readme.md)
 
 **Quick Start:**
 
-   - So, to understand if your browser has webP support or not, basically, you need just run `webpChecker`. 
-   After function running you will get a `window` variable `__WEBPSUPPORT__` (e.g. `window.__WEBPSUPPORT__`) with boolean value that shows if the webp support is `true/false`. 
+   - You can start using `react-picture` with just `name`, `path` and `type` fields providing. Only one important notice about folder structure. As this package works with the varios layouts (mobile, tablet, desktop, ect.), you need to put your images consistently by its folders. For example:
+   ```
+    root ---|
+            | images ---| // or some particupar image folder
+                        | desktop --- |
+                                      | landscape@1x.png
+                                      | landscape@2x.png
+                                      | landscape@1x.webp // Tip: you can avoid webp format if needed.
+                                      | landscape@2x.webp
+                        | tablet  --- |
+                                      | landscape@1x.png
+                                      | landscape@2x.png
+                                      | landscape@1x.webp
+                                      | landscape@2x.webp
+                        | mobile  --- |
+                                      | landscape@1x.png
+                                      | landscape@2x.png
+                                      | landscape@1x.webp
+                                      | landscape@2x.webp
+                        | any etc --- | // some other folder with custom resolutions
+   ```
+
+   This is only one strict requirement while using this package. Probably it would be improved in future, but for not it's the only one way to easily serve various images resolutions inside one `<picture />`.
+
+   So, if your image's folder structure looks like above, you can go ahead and start using this awesome package! 
    
-  -- Example for React usage:
+  -- Example:
   ```
     // ...some logic
-    import webpChecker from 'react-picture' // import it;
+    import Picture from 'react-picture'
 
     class App extends React.Component {
-     // ...some logic
-     
-     componentDidMount() {
-         webpChecker(); // run checker
+      // ...some logic
     
-         window.__WEBSUPPORT__ // get notified about browser webp support by this global variable
-     }
-     
-     // ...some logic
+      render() {
+        return (
+          <// ..some view start>
+            <Picture name='landscape' path='root/images/' pixelDensity={2} type='png' />
+          <// ..some view end>
+        )
+      }
     }
-  ```
-  
-  -- Example basic:
-  ```
-     import webpChecker from 'react-picture' // import it;
-
-     webpChecker(); // run checker
-    
-     window.__WEBSUPPORT__ // get notified about browser webp support by this global variable
   ```
 
 **Advanced:**
-  - In case when you need to set up a better custom config you can throw props as:
-```
-  import webpChecker from 'react-picture' // import it;
+  - In case when you need to set up a better custom config you can throw props as object.
 
-  const config = {
-    imgURL: 'imgSrc', // your_webp_image_src, by default used google static image
-    disableGlobal: true, // disable global injection in 'window' object, by default 'false'
-    injectBodyClass: false, // explicitly set a 'body' class 'webp-support', by default 'true',
-    callback: status => status // some callback that you want to return with webp checker result 'true/false'
-  }
-  
-  webpChecker(config); // run checker
-```
+  -- Example:
+  ```
+    import Picture from 'react-picture' // import it;
+
+    const config = {
+      alt: 'alt_text', // basic alt text for `img` tag describing
+      type: 'png', // type of the image provided
+      path: 'root/images/', // path to your image (**important:** do not add path here with resolutions' paths including)
+      name: 'landscape', // image name
+      pixelDensity: 4, // count of the images densinity
+      extraResolutions: { // resolutions to layout. By default `react-picture` will serve all these three image resolutions
+        desktop: 'min-width: 1001px',
+        tablet: 'max-width: 1000px',
+        mobile: 'max-width: 600px'
+      },
+      classes: { // some classes for providing CSS control for your `<picture />`
+        picture: 'some_class',
+        img: 'some_class'
+      }
+    }
+    
+    return (
+      <Picture {...config} />
+    ); // run picture
+  ```

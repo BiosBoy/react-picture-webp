@@ -20,7 +20,7 @@ import React from 'react'
 
 import { srcCreator, srcIterator, sourcesGenerator } from './helpers'
 
-import { PIXELS_DENSITY_COUNT } from './constants'
+import { DESKTOP_PIXEL_DESTINY } from './constants'
 
 import { IProps } from './types'
 
@@ -30,7 +30,7 @@ class Picture extends React.PureComponent<IProps, any> {
     type: '',
     path: '',
     name: '',
-    pixelDensity: PIXELS_DENSITY_COUNT,
+    pixelDensity: DESKTOP_PIXEL_DESTINY,
     extraResolutions: {
       desktop: 'min-width: 1001px',
       tablet: 'max-width: 1000px',
