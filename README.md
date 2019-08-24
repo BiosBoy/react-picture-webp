@@ -1,12 +1,12 @@
-# react-picture-webp
+# React-Picture-webP
 
- [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=See&url=https://github.com/BiosBoy/react-picture-webp&via=svyat770&hashtags=js,jsx,webp,react-picture-webp,picture,images,html,css)
+ [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=See&url=https://github.com/BiosBoyreact-picture-webp&via=svyat770&hashtags=js,jsx,webp,react-picture-webp,picture,images,html,css)
 
-### Serve any images' retina set with easy with `react-picture-webp` (Intelligent `webP` support included)!
+### Serve any images' retina set with easy by `react-picture-webp` (Intelligent `webP` support included)!
 
 [![npm](https://badgen.net/npm/v/react-picture-webp)](https://www.npmjs.com/package/react-picture-webp) [![Price](https://img.shields.io/badge/price-FREE-purple.svg)](https://github.com/BiosBoy/react-picture-webp/blob/master/LICENSE) [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](https://github.com/BiosBoy/react-picture-webp/blob/master/LICENSE) [![GitHub package version](https://img.shields.io/badge/version-1.1.3-green.svg)](https://github.com/BiosBoy/react-picture-webp) ![](https://img.badgesize.io/biosboy/react-picture-webp/master/index.js.svg)
 
-![logo_image](https://raw.githubusercontent.com/BiosBoy/react-picture-webp/master/web-checker_logo.jpg)
+![logo_image](https://raw.githubusercontent.com/BiosBoy/react-picture-webp/master/react-picture_logo.jpg)
 
 **How to use:**
   - Prepare:
@@ -18,7 +18,7 @@
    ```
      yarn add react-picture-webp
    ```
-**WebP Important Notice!** - to serve webP images via `react-picture-webp` you need to install `webp-checker` package via `npm i web-checker` or `yarn add webp-checker`. And then run it as soon as possible inside the very first component/module that has an interaction with the whole DOM. For example in `create-react-app` you probably should run the below script example in the `componentDidMount()` method of the root App.js. (more details here: https://github.com/BiosBoy/webp-checker/readme.md)
+**WebP Important Notice!** - to serve webP images via `react-picture-webp` you need to install `webp-checker` package via `npm i web-checker` or `yarn add webp-checker`. And then run it as soon as possible inside the very first component/module that has an interaction with the whole DOM. (more details here: https://github.com/BiosBoy/webp-checker/readme.md)
 
 **Quick Start:**
 
