@@ -18,7 +18,7 @@
    ```
      yarn add react-picture
    ```
-**WebP Important Notice!** - to serve webP images via `react-picture` you need to install `webp-checker` package via `npm i web-checker` or `yarn add webp-checker`. And then run it as soon as possible inside the very first component/module that has an interaction with the whole DOM. For example in `create-react-app` you probably should run the below script example in the `componentDidMount()` method of the root App.js. (more details here: https://github.com/BiosBoy/webp-checker/readme.md)
+**WebP Important Notice!** - to serve webP images via `react-picture` you need to install `webp-checker` package via `npm i web-checker` or `yarn add webp-checker`. And then run it as soon as possible inside the very first component/module that has an interaction with the whole DOM. (more details here: https://github.com/BiosBoy/webp-checker/readme.md)
 
 **Quick Start:**
 
