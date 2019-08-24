@@ -1,8 +1,16 @@
-const normalizedDensity = value => value + 1
+"use strict";
 
-const stringifySrcSet = setArray => setArray.join(', ')
+exports.__esModule = true;
+exports.stringifySrcSet = exports.normalizedDensity = void 0;
 
-export {
-  normalizedDensity,
-  stringifySrcSet
-}
+var normalizedDensity = function normalizedDensity(value) {
+  return value + 1;
+};
+
+exports.normalizedDensity = normalizedDensity;
+
+var stringifySrcSet = function stringifySrcSet(setArray) {
+  return setArray.join(", ");
+};
+
+exports.stringifySrcSet = stringifySrcSet;
